@@ -12,5 +12,9 @@ public class Guest {
         return this.name;
     }
 
+    public double getWallet(){
+        return this.wallet;
+    }
+
 
 }

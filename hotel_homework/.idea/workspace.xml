@@ -78,8 +78,8 @@
           <file leaf-file-name="GuestTest.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/test/java/GuestTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="330">
-                  <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+                <state relative-caret-position="351">
+                  <caret line="29" column="1" lean-forward="true" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -144,11 +144,13 @@
           <file leaf-file-name="Guest.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/Guest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="165">
-                  <caret line="11" column="25" lean-forward="false" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+                <state relative-caret-position="225">
+                  <caret line="15" column="27" lean-forward="false" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
                   <folding>
                     <element signature="e#211#212#0" expanded="true" />
                     <element signature="e#243#244#0" expanded="true" />
+                    <element signature="e#275#276#0" expanded="true" />
+                    <element signature="e#309#310#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -517,8 +519,8 @@
         <option value="$PROJECT_DIR$/src/main/java/Lounge.java" />
         <option value="$PROJECT_DIR$/src/test/java/ConferenceRoomTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/ConferenceRoom.java" />
-        <option value="$PROJECT_DIR$/src/test/java/GuestTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/Guest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/GuestTest.java" />
       </list>
     </option>
   </component>
@@ -797,12 +799,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="BedroomTest - 2018.04.13 at 15h 59m 39s.xml">
-      <configuration name="BedroomTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BedroomTest - 2018.04.13 at 16h 05m 25s.xml">
-      <configuration name="BedroomTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="ConferenceRoomTest - 2018.04.13 at 16h 37m 31s.xml">
       <configuration name="ConferenceRoomTest" configurationId="JUnit" />
     </history-entry>
@@ -824,8 +820,14 @@
     <history-entry file="GuestTest - 2018.04.13 at 16h 53m 27s.xml">
       <configuration name="GuestTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LoungeTest - 2018.04.13 at 16h 17m 31s.xml">
-      <configuration name="LoungeTest" configurationId="JUnit" />
+    <history-entry file="GuestTest - 2018.04.13 at 16h 55m 59s.xml">
+      <configuration name="GuestTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GuestTest - 2018.04.13 at 16h 56m 11s.xml">
+      <configuration name="GuestTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GuestTest - 2018.04.13 at 16h 56m 18s.xml">
+      <configuration name="GuestTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -1001,19 +1003,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Guest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="25" lean-forward="false" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+        <state relative-caret-position="225">
+          <caret line="15" column="27" lean-forward="false" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
           <folding>
             <element signature="e#211#212#0" expanded="true" />
             <element signature="e#243#244#0" expanded="true" />
+            <element signature="e#275#276#0" expanded="true" />
+            <element signature="e#309#310#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/GuestTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+        <state relative-caret-position="351">
+          <caret line="29" column="1" lean-forward="true" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

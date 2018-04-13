@@ -20,5 +20,11 @@ public class GuestTest {
         assertEquals("Claire", richGuest.getName());
     }
 
+    @Test
+    public void canGetWallet(){
+        assertEquals(0.0, skintGuest.getWallet(), 0.1);
+        assertEquals(100.0, richGuest.getWallet(), 0.1);
+    }
+
 
 }
