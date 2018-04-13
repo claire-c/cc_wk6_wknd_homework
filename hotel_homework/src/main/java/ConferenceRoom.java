@@ -9,6 +9,10 @@ public class ConferenceRoom extends Room {
         this.roomRate = roomRate;
     }
 
+    public int getCapacity(){
+        return this.capacity;
+    }
+
 
 
 
