@@ -1,4 +1,7 @@
 import org.junit.Before;
+import org.junit.Test;
+
+import static org.junit.Assert.assertEquals;
 
 public class BedroomTest {
 
@@ -10,7 +13,10 @@ public class BedroomTest {
         singleBedroom = new Bedroom("13", RoomType.SINGLE);
     }
 
-    
+    @Test
+    public void canGetRoomType(){
+        assertEquals(RoomType.SINGLE, singleBedroom.getRoomType());
+    }
 
 
 
