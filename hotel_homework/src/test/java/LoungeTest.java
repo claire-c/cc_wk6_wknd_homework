@@ -17,9 +17,11 @@ public class LoungeTest {
         assertEquals("Chillax",lounge.getName());
     }
 
+    @Test
+    public void confirmLoungeEmpty(){
+        assertEquals(0, lounge.getOccupants().size());
+    }
 
-
-    
 
 
 
