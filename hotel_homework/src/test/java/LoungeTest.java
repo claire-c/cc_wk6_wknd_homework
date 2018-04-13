@@ -9,7 +9,7 @@ public class LoungeTest {
 
     @Before
     public void before(){
-        lounge = new Lounge("Chillax");
+        lounge = new Lounge("Chillax", 50);
     }
 
     @Test
@@ -20,6 +20,11 @@ public class LoungeTest {
     @Test
     public void confirmLoungeEmpty(){
         assertEquals(0, lounge.getOccupants().size());
+    }
+
+    @Test
+    public void canGetCapacity(){
+        assertEquals(50, lounge.getCapacity());
     }
 
 
