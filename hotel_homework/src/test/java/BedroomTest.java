@@ -11,11 +11,19 @@ public class BedroomTest {
     @Before
     public void before() {
         singleBedroom = new Bedroom("13", RoomType.SINGLE);
+        doubleBedroom = new Bedroom("10", RoomType.DOUBLE);
     }
 
     @Test
     public void canGetRoomType(){
         assertEquals(RoomType.SINGLE, singleBedroom.getRoomType());
+        assertEquals(RoomType.DOUBLE, doubleBedroom.getRoomType());
+    }
+
+    @Test
+    public void canGetName(){
+        assertEquals("13", singleBedroom.getName());
+        assertEquals("10", doubleBedroom.getName());
     }
 
 
