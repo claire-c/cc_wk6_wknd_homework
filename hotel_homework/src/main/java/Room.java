@@ -10,6 +10,15 @@ public abstract class Room {
         this.occupants = new ArrayList<>();
     }
 
+    public String getName(){
+        return this.name;
+    }
+
+    public ArrayList<Guest> getOccupants() {
+        return occupants;
+    }
+
+
 
 
 
