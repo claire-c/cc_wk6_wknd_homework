@@ -26,6 +26,12 @@ public class BedroomTest {
         assertEquals("10", doubleBedroom.getName());
     }
 
+    @Test
+    public void canGetOccupantsCount(){
+        assertEquals(0, singleBedroom.getOccupants().size());
+        assertEquals(0, doubleBedroom.getOccupants().size());
+    }
+
 
 
 
