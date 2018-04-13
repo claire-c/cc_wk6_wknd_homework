@@ -17,5 +17,9 @@ public class ConferenceRoomTest {
         assertEquals("Ruby", conferenceRoom.getName());
     }
 
+    @Test
+    public void canGetOccupants(){
+        assertEquals(0, conferenceRoom.getOccupants().size());
+    }
 
 }
