@@ -27,7 +27,10 @@ public class ConferenceRoomTest {
         assertEquals(100, conferenceRoom.getCapacity());
     }
 
-
+    @Test
+    public void canGetRoomRate(){
+        assertEquals(500.0, conferenceRoom.getRoomRate(), 0.1);
+    }
 
 
 
