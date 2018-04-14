@@ -48,7 +48,7 @@ public class Hotel {
         otherRooms.add(lounge);
     }
 
-    public void checkInGuest(Guest guest, Bedroom bedroom){
+    public void checkInGuest(Guest guest, Room bedroom){
         bedroom.addOccupant(guest);
     }
 

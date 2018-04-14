@@ -108,6 +108,12 @@ public class HotelTest {
         assertEquals(1, bedroomToCheck.getOccupants().size());
     }
 
+    @Test
+    public void canCheckInGuestToConferenceRoom(){
+        fullHotel.checkInGuest(skintGuest, conferenceRoom);
+        assertEquals(1, conferenceRoom.getOccupants().size());
+    }
+
 
 
 
