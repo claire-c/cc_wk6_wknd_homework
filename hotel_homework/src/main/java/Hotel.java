@@ -52,6 +52,10 @@ public class Hotel {
         bedroom.addOccupant(guest);
     }
 
+    public void checkOutAnyGuest(Room room){
+        room.getOccupants().remove(0);
+    }
+
 
 
 

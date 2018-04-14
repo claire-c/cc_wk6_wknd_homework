@@ -116,6 +116,18 @@ public class HotelTest {
         assertEquals(1, lounge.getOccupants().size());
     }
 
+    @Test
+    public void canCheckOutAnyGuest(){
+        fullHotel.checkInGuest(skintGuest, singleBedroom);
+        fullHotel.checkOutAnyGuest(singleBedroom);
+        fullHotel.checkInGuest(richGuest, conferenceRoom);
+        fullHotel.checkOutAnyGuest(conferenceRoom);
+        assertEquals(0, singleBedroom.getNumberOfOccupants());
+        assertEquals(0, conferenceRoom.getNumberOfOccupants());
+    }
+
+
+
 
 
 
