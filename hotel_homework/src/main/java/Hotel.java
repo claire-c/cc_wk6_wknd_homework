@@ -36,6 +36,10 @@ public class Hotel {
         return this.otherRooms;
     }
 
+    public void addBedroom(Bedroom bedroom){
+        bedrooms.add(bedroom);
+    }
+
 
 
 
