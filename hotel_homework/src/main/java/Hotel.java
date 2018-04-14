@@ -80,6 +80,10 @@ public class Hotel {
     }
 
 
+    public ArrayList<Guest> getGuestList(Room room){
+        return room.getOccupants();
+    }
+
 
 
 
