@@ -22,6 +22,10 @@ public abstract class Room {
         occupants.add(guest);
     }
 
+    public int getNumberOfOccupants(){
+        return occupants.size();
+    }
+
 
 
 
