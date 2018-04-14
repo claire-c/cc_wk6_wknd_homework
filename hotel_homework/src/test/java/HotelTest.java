@@ -95,17 +95,13 @@ public class HotelTest {
     @Test
     public void canCheckInGuestToSingleBedroom(){
         fullHotel.checkInGuest(richGuest, singleBedroom);
-        ArrayList<Bedroom> bedroomList = fullHotel.getBedrooms();
-        Bedroom bedroomToCheck = bedroomList.get(0);
-        assertEquals(1, bedroomToCheck.getOccupants().size());
+        assertEquals(1, singleBedroom.getOccupants().size());
     }
 
     @Test
     public void canCheckInGuestToDoubleBedroom(){
         fullHotel.checkInGuest(richGuest, doubleBedroom);
-        ArrayList<Bedroom> bedroomList = fullHotel.getBedrooms();
-        Bedroom bedroomToCheck = bedroomList.get(1);
-        assertEquals(1, bedroomToCheck.getOccupants().size());
+        assertEquals(1, doubleBedroom.getOccupants().size());
     }
 
     @Test
@@ -114,7 +110,11 @@ public class HotelTest {
         assertEquals(1, conferenceRoom.getOccupants().size());
     }
 
-
+    @Test
+    public void canCheckInGuestToLounge(){
+        fullHotel.checkInGuest(skintGuest, lounge);
+        assertEquals(1, lounge.getOccupants().size());
+    }
 
 
 

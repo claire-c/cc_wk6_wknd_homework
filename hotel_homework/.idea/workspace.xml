@@ -86,8 +86,8 @@
           <file leaf-file-name="HotelTest.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/test/java/HotelTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="306">
-                  <caret line="116" column="33" lean-forward="true" selection-start-line="116" selection-start-column="33" selection-end-line="116" selection-end-column="33" />
+                <state relative-caret-position="370">
+                  <caret line="117" column="10" lean-forward="true" selection-start-line="117" selection-start-column="10" selection-end-line="117" selection-end-column="10" />
                   <folding>
                     <element signature="imports" expanded="true" />
                     <element signature="e#1106#1107#0" expanded="true" />
@@ -550,8 +550,8 @@
         <option value="$PROJECT_DIR$/src/test/java/ConferenceRoomTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/BedroomTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/LoungeTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/HotelTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/Hotel.java" />
+        <option value="$PROJECT_DIR$/src/test/java/HotelTest.java" />
       </list>
     </option>
   </component>
@@ -864,9 +864,6 @@
     <history-entry file="ConferenceRoomTest - 2018.04.14 at 14h 05m 26s.xml">
       <configuration name="ConferenceRoomTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="HotelTest - 2018.04.14 at 14h 02m 35s.xml">
-      <configuration name="HotelTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="HotelTest - 2018.04.14 at 14h 09m 42s.xml">
       <configuration name="HotelTest" configurationId="JUnit" />
     </history-entry>
@@ -877,6 +874,9 @@
       <configuration name="HotelTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="HotelTest - 2018.04.14 at 14h 25m 44s.xml">
+      <configuration name="HotelTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HotelTest - 2018.04.14 at 14h 27m 27s.xml">
       <configuration name="HotelTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="LoungeTest - 2018.04.14 at 14h 08m 46s.xml">
@@ -1088,8 +1088,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/HotelTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="116" column="33" lean-forward="true" selection-start-line="116" selection-start-column="33" selection-end-line="116" selection-end-column="33" />
+        <state relative-caret-position="370">
+          <caret line="117" column="10" lean-forward="true" selection-start-line="117" selection-start-column="10" selection-end-line="117" selection-end-column="10" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1106#1107#0" expanded="true" />
