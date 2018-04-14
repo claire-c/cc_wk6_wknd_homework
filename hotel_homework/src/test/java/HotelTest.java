@@ -6,6 +6,7 @@ import static org.junit.Assert.assertEquals;
 public class HotelTest {
 
     private Hotel hotel;
+    private Hotel fullHotel;
     private Guest skintGuest;
     private Guest richGuest;
     private Bedroom singleBedroom;
@@ -17,12 +18,19 @@ public class HotelTest {
     @Before
     public void before(){
         hotel = new Hotel("Happiness Hotel", 0.0);
-        skintGuest = new Guest("Simon", 0.0);
+        skintGuest = new Guest("Jon", 0.0);
         richGuest = new Guest("Claire", 100.0);
         singleBedroom = new Bedroom("1", RoomType.SINGLE, 25.0);
         doubleBedroom = new Bedroom("2", RoomType.DOUBLE, 50.0);
         conferenceRoom = new ConferenceRoom("conference", 100, 500.0);
         lounge = new Lounge("lounge", 50);
+
+        fullHotel = new Hotel("full", 100.0);
+        fullHotel.addConferenceRoom(conferenceRoom);
+        fullHotel.addBedroom(singleBedroom);
+        fullHotel.addBedroom(doubleBedroom);
+        fullHotel.addOtherRoom(lounge);
+        
     }
 
     @Test
