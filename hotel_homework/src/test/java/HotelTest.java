@@ -100,6 +100,14 @@ public class HotelTest {
         assertEquals(1, bedroomToCheck.getOccupants().size());
     }
 
+    @Test
+    public void canCheckInGuestToDoubleBedroom(){
+        fullHotel.checkInGuest(richGuest, doubleBedroom);
+        ArrayList<Bedroom> bedroomList = fullHotel.getBedrooms();
+        Bedroom bedroomToCheck = bedroomList.get(1);
+        assertEquals(1, bedroomToCheck.getOccupants().size());
+    }
+
 
 
 
