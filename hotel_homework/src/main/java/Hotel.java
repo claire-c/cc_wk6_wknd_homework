@@ -84,7 +84,36 @@ public class Hotel {
         return room.getOccupants();
     }
 
+    public boolean checkConferenceRoomCapacity(ConferenceRoom room){
+        if (room.getNumberOfOccupants() < room.getCapacity()){
+            return true;
+        }
+            else{
+            return false;
+        }
+    }
+
+    public boolean checkOtherRoomCapacity(Lounge room){
+        if (room.getNumberOfOccupants() < room.getCapacity()){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+
+    public boolean canCheckBedroomCapacity(Bedroom room){
+
+    }
 
 
+
+//    To check the class of the room I am looking to check capacity on.
+//    It will depend on whether its a bedroom or other room type, as
+//            capacity is saved in different properties depending on class.
+    
+//    if (a.getClass() == X.class) {
+//        // do something
+//    }
 
 }

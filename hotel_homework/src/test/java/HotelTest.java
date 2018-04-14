@@ -4,6 +4,8 @@ import org.junit.Test;
 import java.util.ArrayList;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
 
 public class HotelTest {
 
@@ -15,6 +17,8 @@ public class HotelTest {
     private Bedroom doubleBedroom;
     private ConferenceRoom conferenceRoom;
     private Lounge lounge;
+    private ConferenceRoom tinyConferenceRoom;
+    private Lounge tinyLounge;
 
 
     @Before
@@ -26,6 +30,8 @@ public class HotelTest {
         doubleBedroom = new Bedroom("2", RoomType.DOUBLE, 50.0);
         conferenceRoom = new ConferenceRoom("conference", 100, 500.0);
         lounge = new Lounge("lounge", 50);
+        tinyConferenceRoom = new ConferenceRoom("tiny", 1, 5.0);
+        tinyLounge = new Lounge("tiny lounge", 1);
 
         fullHotel = new Hotel("full", 100.0);
         fullHotel.addConferenceRoom(conferenceRoom);
@@ -142,8 +148,31 @@ public class HotelTest {
 
     @Test
     public void canGetGuestList(){
-        fullHotel.checkInGuest(richGuest, singleBedroom);
-        assertEquals(1, fullHotel.getGuestList(singleBedroom).size());
+        fullHotel.checkInGuest(richGuest, doubleBedroom);
+        fullHotel.checkInGuest(skintGuest, doubleBedroom);
+        assertEquals(2, fullHotel.getGuestList(doubleBedroom).size());
+    }
+
+    @Test
+    public void canCheckConferenceRoomCapacityRoomNotFull(){
+         assertTrue(fullHotel.checkConferenceRoomCapacity(conferenceRoom));
+    }
+
+    @Test
+    public void canCheckConferenceRoomCapacityFull(){
+        tinyConferenceRoom.addOccupant(skintGuest);
+        assertFalse(fullHotel.checkConferenceRoomCapacity(tinyConferenceRoom));
+    }
+
+    @Test
+    public void canCheckOtherRoomCapacityEmpty(){
+        assertTrue(fullHotel.checkOtherRoomCapacity(lounge));
+    }
+
+    @Test
+    public void canCheckOtherRoomCapacityFull(){
+        fullHotel.checkInGuest(skintGuest, tinyLounge);
+        assertFalse(fullHotel.checkOtherRoomCapacity(tinyLounge));
     }
 
 
