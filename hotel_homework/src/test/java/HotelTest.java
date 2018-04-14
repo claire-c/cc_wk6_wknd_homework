@@ -26,7 +26,13 @@ public class HotelTest {
         assertEquals("Happiness Hotel",hotel.getName());
     }
 
-    
+    @Test
+    public void canGetTill(){
+        assertEquals(0.0, hotel.getTill(), 0.1);
+    }
+
+    @Test
+    public void
 
 
 

@@ -20,4 +20,8 @@ public class Hotel {
         return this.name;
     }
 
+    public double getTill(){
+        return this.till;
+    }
+
 }
