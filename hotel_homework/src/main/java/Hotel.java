@@ -24,4 +24,8 @@ public class Hotel {
         return this.till;
     }
 
+    public ArrayList<Bedroom> getBedrooms(){
+        return this.bedrooms;
+    }
+
 }
