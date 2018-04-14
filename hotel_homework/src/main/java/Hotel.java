@@ -32,4 +32,16 @@ public class Hotel {
         return this.conferenceRooms;
     }
 
+    public ArrayList<Room> getOtherRooms(){
+        return this.otherRooms;
+    }
+
+
+
+
+
+
+
+
+
 }
