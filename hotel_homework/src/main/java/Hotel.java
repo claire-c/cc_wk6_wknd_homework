@@ -53,7 +53,9 @@ public class Hotel {
     }
 
     public void checkOutAnyGuest(Room room){
-        room.getOccupants().remove(0);
+        if (room.getNumberOfOccupants() > 0 ){
+            room.getOccupants().remove(0);
+        }
     }
 
 

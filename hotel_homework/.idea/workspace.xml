@@ -86,8 +86,8 @@
           <file leaf-file-name="HotelTest.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/test/java/HotelTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="315">
-                  <caret line="129" column="24" lean-forward="true" selection-start-line="129" selection-start-column="24" selection-end-line="129" selection-end-column="24" />
+                <state relative-caret-position="369">
+                  <caret line="136" column="32" lean-forward="true" selection-start-line="136" selection-start-column="32" selection-end-line="136" selection-end-column="32" />
                   <folding>
                     <element signature="imports" expanded="true" />
                     <element signature="e#1106#1107#0" expanded="true" />
@@ -142,8 +142,8 @@
           <file leaf-file-name="Hotel.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/Hotel.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="291">
-                  <caret line="55" column="38" lean-forward="false" selection-start-line="55" selection-start-column="38" selection-end-line="55" selection-end-column="38" />
+                <state relative-caret-position="366">
+                  <caret line="60" column="0" lean-forward="true" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
                   <folding>
                     <element signature="e#506#507#0" expanded="true" />
                     <element signature="e#538#539#0" expanded="true" />
@@ -163,8 +163,6 @@
                     <element signature="e#1151#1152#0" expanded="true" />
                     <element signature="e#1209#1210#0" expanded="true" />
                     <element signature="e#1251#1252#0" expanded="true" />
-                    <element signature="e#1297#1298#0" expanded="true" />
-                    <element signature="e#1342#1343#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -880,8 +878,8 @@
     <history-entry file="HotelTest - 2018.04.14 at 15h 16m 04s.xml">
       <configuration name="HotelTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LoungeTest - 2018.04.14 at 14h 08m 46s.xml">
-      <configuration name="LoungeTest" configurationId="JUnit" />
+    <history-entry file="HotelTest - 2018.04.14 at 15h 18m 35s.xml">
+      <configuration name="HotelTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="LoungeTest - 2018.04.14 at 14h 32m 03s.xml">
       <configuration name="LoungeTest" configurationId="JUnit" />
@@ -1067,8 +1065,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Hotel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="55" column="38" lean-forward="false" selection-start-line="55" selection-start-column="38" selection-end-line="55" selection-end-column="38" />
+        <state relative-caret-position="366">
+          <caret line="60" column="0" lean-forward="true" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
           <folding>
             <element signature="e#506#507#0" expanded="true" />
             <element signature="e#538#539#0" expanded="true" />
@@ -1088,16 +1086,14 @@
             <element signature="e#1151#1152#0" expanded="true" />
             <element signature="e#1209#1210#0" expanded="true" />
             <element signature="e#1251#1252#0" expanded="true" />
-            <element signature="e#1297#1298#0" expanded="true" />
-            <element signature="e#1342#1343#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/HotelTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="129" column="24" lean-forward="true" selection-start-line="129" selection-start-column="24" selection-end-line="129" selection-end-column="24" />
+        <state relative-caret-position="369">
+          <caret line="136" column="32" lean-forward="true" selection-start-line="136" selection-start-column="32" selection-end-line="136" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1106#1107#0" expanded="true" />

@@ -126,6 +126,12 @@ public class HotelTest {
         assertEquals(0, conferenceRoom.getNumberOfOccupants());
     }
 
+    @Test
+    public void checkOutAnyGuestWontBreakWhenRoomEmpty(){
+        fullHotel.checkOutAnyGuest(conferenceRoom);
+        assertEquals(0, conferenceRoom.getNumberOfOccupants());
+    }
+
 
 
 
