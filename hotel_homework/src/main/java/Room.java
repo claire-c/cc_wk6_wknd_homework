@@ -18,7 +18,9 @@ public abstract class Room {
         return occupants;
     }
 
-
+    public void addOccupant(Guest guest){
+        occupants.add(guest);
+    }
 
 
 
