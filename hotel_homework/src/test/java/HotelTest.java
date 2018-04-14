@@ -62,5 +62,16 @@ public class HotelTest {
     }
 
 
+    @Test
+    public void canGetPopulatedBedroomArrayList(){
+        hotel.addBedroom(singleBedroom);
+        assertEquals(1, hotel.getBedrooms().size());
+    }
+
+
+    
+
+
+
 
 }
