@@ -35,6 +35,12 @@ public class LoungeTest {
         assertEquals(1, lounge.getOccupants().size());
     }
 
+    @Test
+    public void canGetNumberOfOccupants(){
+        lounge.addOccupant(guest);
+        assertEquals(1, lounge.getNumberOfOccupants());
+    }
+
 
 
 }
