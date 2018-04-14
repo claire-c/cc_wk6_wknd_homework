@@ -32,9 +32,16 @@ public class HotelTest {
     }
 
     @Test
-    public void canGetEmptyBedroomList(){
+    public void canGetEmptyBedroomArrayList(){
         assertEquals(0, hotel.getBedrooms().size());
     }
+
+    @Test
+    public void canGetEmptyConferenceRoomArrayList(){
+        assertEquals(0, hotel.getConferenceRooms().size());
+    }
+
+
 
 
 

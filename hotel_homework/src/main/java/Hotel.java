@@ -28,4 +28,8 @@ public class Hotel {
         return this.bedrooms;
     }
 
+    public ArrayList<ConferenceRoom> getConferenceRooms(){
+        return this.conferenceRooms;
+    }
+
 }
