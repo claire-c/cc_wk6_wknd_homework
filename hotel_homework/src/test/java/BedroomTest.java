@@ -7,11 +7,13 @@ public class BedroomTest {
 
     private Bedroom singleBedroom;
     private Bedroom doubleBedroom;
+    private Guest guest;
 
     @Before
     public void before() {
         singleBedroom = new Bedroom("13", RoomType.SINGLE, 25.0);
         doubleBedroom = new Bedroom("10", RoomType.DOUBLE, 50.0);
+        guest = new Guest("Claire", 50.0);
     }
 
     @Test
@@ -38,6 +40,11 @@ public class BedroomTest {
         assertEquals(50.0, doubleBedroom.getRoomRate(), 0.1);
     }
 
+    @Test
+    public void canAddOccupant(){
+       singleBedroom.addOccupant(guest);
+       assertEquals(1, singleBedroom.getOccupants().size());
+    }
 
 
 
