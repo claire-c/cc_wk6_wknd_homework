@@ -6,10 +6,12 @@ import static org.junit.Assert.assertEquals;
 public class LoungeTest {
 
     private Lounge lounge;
+    private Guest guest;
 
     @Before
     public void before(){
         lounge = new Lounge("Chillax", 50);
+        guest = new Guest("Claire", 50.0);
     }
 
     @Test
@@ -27,7 +29,11 @@ public class LoungeTest {
         assertEquals(50, lounge.getCapacity());
     }
 
-
+    @Test
+    public void canAddOccupant(){
+        lounge.addOccupant(guest);
+        assertEquals(1, lounge.getOccupants().size());
+    }
 
 
 
