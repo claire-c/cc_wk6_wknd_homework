@@ -132,6 +132,13 @@ public class HotelTest {
         assertEquals(0, conferenceRoom.getNumberOfOccupants());
     }
 
+    @Test
+    public void canCheckOutNamedGuest(){
+        fullHotel.checkInGuest(skintGuest, lounge);
+        fullHotel.checkOutNamedGuest("Jon", lounge);
+        assertEquals(0, lounge.getNumberOfOccupants());
+    }
+
 
 
 

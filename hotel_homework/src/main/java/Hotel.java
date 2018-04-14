@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Iterator;
 
 public class Hotel {
 
@@ -48,8 +49,8 @@ public class Hotel {
         otherRooms.add(lounge);
     }
 
-    public void checkInGuest(Guest guest, Room bedroom){
-        bedroom.addOccupant(guest);
+    public void checkInGuest(Guest guest, Room room){
+        room.addOccupant(guest);
     }
 
     public void checkOutAnyGuest(Room room){
@@ -58,6 +59,25 @@ public class Hotel {
         }
     }
 
+    public void checkOutNamedGuest(String nameOfGuest, Room room){
+
+        Iterator<Guest> guestList = room.getOccupants().iterator();
+
+        while (guestList.hasNext()){
+            Guest occupant = guestList.next();
+            if (occupant.getName() == nameOfGuest){
+                guestList.remove();
+            }
+        }
+
+//        for (Guest occupant : room.getOccupants()){
+//            if (occupant.getName() == nameOfGuest){
+//                int index = room.getOccupants().indexOf(occupant);
+//                room.getOccupants().remove(index);
+//            }
+//
+//        }
+    }
 
 
 
