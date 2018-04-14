@@ -44,7 +44,9 @@ public class Hotel {
         conferenceRooms.add(conferenceRoom);
     }
 
-
+    public void addOtherRoom(Room lounge){
+        otherRooms.add(lounge);
+    }
 
 
 
