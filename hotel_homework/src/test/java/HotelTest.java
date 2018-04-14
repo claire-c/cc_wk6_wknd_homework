@@ -10,6 +10,7 @@ public class HotelTest {
     private Guest richGuest;
     private Bedroom singleBedroom;
     private Bedroom doubleBedroom;
+    public ConferenceRoom conferenceRoom;
 
 
     @Before
@@ -19,6 +20,7 @@ public class HotelTest {
         richGuest = new Guest("Claire", 100.0);
         singleBedroom = new Bedroom("1", RoomType.SINGLE, 25.0);
         doubleBedroom = new Bedroom("2", RoomType.DOUBLE, 50.0);
+        conferenceRoom = new ConferenceRoom("conference", 100, 500.0);
     }
 
     @Test
@@ -53,6 +55,11 @@ public class HotelTest {
     }
 
 
+    @Test
+    public void canAddConferenceRoom(){
+        hotel.addConferenceRoom(conferenceRoom);
+        assertEquals(1, hotel.getConferenceRooms().size());
+    }
 
 
 

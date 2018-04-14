@@ -40,6 +40,9 @@ public class Hotel {
         bedrooms.add(bedroom);
     }
 
+    public void addConferenceRoom(ConferenceRoom conferenceRoom){
+        conferenceRooms.add(conferenceRoom);
+    }
 
 
 
