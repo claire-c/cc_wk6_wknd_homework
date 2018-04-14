@@ -68,8 +68,11 @@ public class HotelTest {
         assertEquals(1, hotel.getBedrooms().size());
     }
 
-
-    
+    @Test
+    public void canGetPopulatedConferenceRoomArrayList(){
+        hotel.addConferenceRoom(conferenceRoom);
+        assertEquals(1, hotel.getConferenceRooms().size());
+    }
 
 
 
