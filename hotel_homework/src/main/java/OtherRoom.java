@@ -11,7 +11,7 @@ public class OtherRoom extends Room {
         return this.capacity;
     }
 
-    public boolean checkOtherRoomCapacity(){
+    public boolean checkRoomCapacity(){
         if (getNumberOfOccupants() < getCapacity()){
             return true;
         }
