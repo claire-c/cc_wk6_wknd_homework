@@ -16,8 +16,16 @@ public class Guest {
         return this.wallet;
     }
 
-    public double payForRoom(Room room){
+    public boolean canPay(Room room){
         if(room.getRoomRate() < wallet){
+            return true;
+        }else{
+            return false;
+        }
+    }
+
+    public double payForRoom(Room room){
+        if(canPay(room) == true){
                 wallet -= room.getRoomRate();
                 return room.getRoomRate();
             }
