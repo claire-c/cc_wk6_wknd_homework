@@ -206,6 +206,13 @@ public class HotelTest {
         assertEquals(1, fullHotel.vacantRooms().size());
     }
 
+    @Test
+    public void canGetGuestListBasedOnRoomName(){
+        fullHotel.checkInGuest(richGuest, doubleBedroom);
+        fullHotel.checkInGuest(richGuest2, doubleBedroom);
+        assertEquals(2, fullHotel.getGuestsFromRoomName("2").size());
+    }
+
 
 
 
