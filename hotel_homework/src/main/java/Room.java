@@ -26,6 +26,9 @@ public abstract class Room {
         return occupants.size();
     }
 
+    public abstract boolean isRoomFull();
+
+
 
 
 

@@ -50,7 +50,9 @@ public class Hotel {
     }
 
     public void checkInGuest(Guest guest, Room room){
-        room.addOccupant(guest);
+        if(room.isRoomFull() == false) {
+            room.addOccupant(guest);
+        }
     }
 
     public void checkOutAnyGuest(Room room){

@@ -123,6 +123,13 @@ public class HotelTest {
     }
 
     @Test
+    public void cannotCheckInGuestRoomFull(){
+        fullHotel.checkInGuest(skintGuest, singleBedroom);
+        fullHotel.checkInGuest(richGuest,singleBedroom);
+        assertEquals(1, singleBedroom.getNumberOfOccupants());
+    }
+
+    @Test
     public void canCheckOutAnyGuest(){
         fullHotel.checkInGuest(skintGuest, singleBedroom);
         fullHotel.checkOutAnyGuest(singleBedroom);
@@ -153,29 +160,11 @@ public class HotelTest {
         assertEquals(2, fullHotel.getGuestList(doubleBedroom).size());
     }
 
-//    @Test
-//    public void canCheckConferenceRoomCapacityRoomNotFull(){
-//         assertTrue(fullHotel.checkConferenceRoomCapacity(conferenceRoom));
-//    }
 
-//    @Test
-//    public void canCheckConferenceRoomCapacityFull(){
-//        tinyConferenceRoom.addOccupant(skintGuest);
-//        assertFalse(fullHotel.checkConferenceRoomCapacity(tinyConferenceRoom));
-//    }
-//
-//    @Test
-//    public void canCheckOtherRoomCapacityEmpty(){
-//        assertTrue(fullHotel.checkOtherRoomCapacity(lounge));
-//    }
-//
-//    @Test
-//    public void canCheckOtherRoomCapacityFull(){
-//        fullHotel.checkInGuest(skintGuest, tinyLounge);
-//        assertFalse(fullHotel.checkOtherRoomCapacity(tinyLounge));
-//    }
-//
-//
+
+
+
+
 
 
 
