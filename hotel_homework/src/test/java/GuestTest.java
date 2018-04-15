@@ -38,6 +38,12 @@ public class GuestTest {
         assertEquals(75.0, richGuest.getWallet(), 0.1);
     }
 
+    @Test
+    public void guestCannotPayForRoom(){
+        skintGuest.payForRoom(singleBedroom);
+        assertEquals(0.0, skintGuest.getWallet(), 0.1);
+    }
+
 
 
 

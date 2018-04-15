@@ -82,7 +82,7 @@
             <entry file="file://$PROJECT_DIR$/src/test/java/GuestTest.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="321">
-                  <caret line="41" column="0" lean-forward="true" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+                  <caret line="46" column="19" lean-forward="true" selection-start-line="46" selection-start-column="19" selection-end-line="46" selection-end-column="19" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -565,8 +565,8 @@
         <option value="$PROJECT_DIR$/src/main/java/OtherRoom.java" />
         <option value="$PROJECT_DIR$/src/main/java/Bedroom.java" />
         <option value="$PROJECT_DIR$/src/main/java/ConferenceRoom.java" />
-        <option value="$PROJECT_DIR$/src/test/java/GuestTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/Guest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/GuestTest.java" />
       </list>
     </option>
   </component>
@@ -876,8 +876,8 @@
     <history-entry file="GuestTest - 2018.04.15 at 15h 29m 26s.xml">
       <configuration name="GuestTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="HotelTest - 2018.04.15 at 14h 41m 53s.xml">
-      <configuration name="HotelTest" configurationId="JUnit" />
+    <history-entry file="GuestTest - 2018.04.15 at 15h 31m 26s.xml">
+      <configuration name="GuestTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="HotelTest - 2018.04.15 at 14h 42m 40s.xml">
       <configuration name="HotelTest" configurationId="JUnit" />
@@ -1126,7 +1126,7 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/GuestTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="321">
-          <caret line="41" column="0" lean-forward="true" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+          <caret line="46" column="19" lean-forward="true" selection-start-line="46" selection-start-column="19" selection-end-line="46" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
