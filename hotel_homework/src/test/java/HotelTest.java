@@ -202,6 +202,8 @@ public class HotelTest {
     @Test
     public void canSeeVacantBedrooms(){
         assertEquals(2, fullHotel.vacantRooms().size());
+        fullHotel.checkInGuest(richGuest, singleBedroom);
+        assertEquals(1, fullHotel.vacantRooms().size());
     }
 
 
