@@ -18,6 +18,15 @@ public class Bedroom extends Room{
         return this.roomRate;
     }
 
+    public boolean isRoomFull(){
+        if (getNumberOfOccupants() < roomType.getCapacity()){
+            return false;
+        }
+        else{
+            return true;
+        }
+    }
+
 
 
 

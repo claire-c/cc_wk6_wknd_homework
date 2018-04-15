@@ -21,24 +21,22 @@
     <splitter split-orientation="horizontal" split-proportion="0.4659832">
       <split-first>
         <leaf>
-          <file leaf-file-name="BedroomTest.java" pinned="false" current-in-tab="false">
+          <file leaf-file-name="BedroomTest.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/test/java/BedroomTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="333">
-                  <caret line="58" column="0" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
-                  <caret line="57" column="0" lean-forward="false" selection-start-line="57" selection-start-column="2" selection-end-line="57" selection-end-column="8" />
-                  <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="2" selection-end-line="56" selection-end-column="8" />
-                  <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="2" selection-end-line="55" selection-end-column="8" />
-                  <caret line="54" column="0" lean-forward="false" selection-start-line="54" selection-start-column="2" selection-end-line="54" selection-end-column="8" />
+                <state relative-caret-position="323">
+                  <caret line="67" column="16" lean-forward="true" selection-start-line="67" selection-start-column="16" selection-end-line="67" selection-end-column="16" />
                   <folding>
                     <element signature="imports" expanded="true" />
-                    <marker date="1523796689000" expanded="true" signature="1458:1465" ph="..." />
+                    <element signature="e#1586#1587#0" expanded="true" />
+                    <element signature="e#1641#1642#0" expanded="true" />
+                    <marker date="1523796929000" expanded="true" signature="1543:1550" ph="..." />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="OtherRoomTest.java" pinned="false" current-in-tab="true">
+          <file leaf-file-name="OtherRoomTest.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/test/java/OtherRoomTest.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="324">
@@ -118,11 +116,11 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="Bedroom.java" pinned="false" current-in-tab="false">
+          <file leaf-file-name="Bedroom.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/Bedroom.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="255">
-                  <caret line="17" column="29" lean-forward="false" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
+                <state relative-caret-position="360">
+                  <caret line="24" column="13" lean-forward="true" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
                   <folding>
                     <element signature="e#297#298#0" expanded="true" />
                     <element signature="e#333#334#0" expanded="true" />
@@ -133,11 +131,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="ConferenceRoom.java" pinned="false" current-in-tab="true">
+          <file leaf-file-name="ConferenceRoom.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/ConferenceRoom.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="244">
-                  <caret line="24" column="23" lean-forward="false" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
+                <state relative-caret-position="184">
+                  <caret line="20" column="2" lean-forward="true" selection-start-line="20" selection-start-column="2" selection-end-line="25" selection-end-column="9" />
                   <folding>
                     <element signature="e#295#296#0" expanded="true" />
                     <element signature="e#331#332#0" expanded="true" />
@@ -230,8 +228,8 @@
           <file leaf-file-name="RoomType.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/RoomType.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="300">
-                  <caret line="20" column="1" lean-forward="false" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+                <state relative-caret-position="225">
+                  <caret line="15" column="19" lean-forward="false" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="32" />
                   <folding>
                     <element signature="e#178#179#0" expanded="true" />
                     <element signature="e#218#219#0" expanded="true" />
@@ -554,8 +552,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/RoomType.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Bedroom.java" />
         <option value="$PROJECT_DIR$/src/main/java/Guest.java" />
         <option value="$PROJECT_DIR$/src/test/java/GuestTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/LoungeTest.java" />
@@ -567,8 +563,10 @@
         <option value="$PROJECT_DIR$/src/main/java/OtherRoom.java" />
         <option value="$PROJECT_DIR$/src/main/java/ConferenceRoom.java" />
         <option value="$PROJECT_DIR$/src/test/java/OtherRoomTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/BedroomTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/ConferenceRoomTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/RoomType.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Bedroom.java" />
+        <option value="$PROJECT_DIR$/src/test/java/BedroomTest.java" />
       </list>
     </option>
   </component>
@@ -653,7 +651,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.OtherRoomTest">
+  <component name="RunManager" selected="JUnit.BedroomTest">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -844,11 +842,11 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.OtherRoomTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.ConferenceRoomTest" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.HotelTest" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.LoungeTest" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.BedroomTest" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.BedroomTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.OtherRoomTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.ConferenceRoomTest" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.HotelTest" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.LoungeTest" />
       </list>
     </recent_temporary>
   </component>
@@ -869,6 +867,9 @@
     <servers />
   </component>
   <component name="TestHistory">
+    <history-entry file="BedroomTest - 2018.04.15 at 13h 55m 32s.xml">
+      <configuration name="BedroomTest" configurationId="JUnit" />
+    </history-entry>
     <history-entry file="ConferenceRoomTest - 2018.04.15 at 13h 40m 41s.xml">
       <configuration name="ConferenceRoomTest" configurationId="JUnit" />
     </history-entry>
@@ -877,9 +878,6 @@
     </history-entry>
     <history-entry file="ConferenceRoomTest - 2018.04.15 at 13h 51m 33s.xml">
       <configuration name="ConferenceRoomTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="HotelTest - 2018.04.14 at 16h 03m 18s.xml">
-      <configuration name="HotelTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="HotelTest - 2018.04.14 at 16h 26m 16s.xml">
       <configuration name="HotelTest" configurationId="JUnit" />
@@ -944,19 +942,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/RoomType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="1" lean-forward="false" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
-          <folding>
-            <element signature="e#178#179#0" expanded="true" />
-            <element signature="e#218#219#0" expanded="true" />
-            <element signature="e#254#255#0" expanded="true" />
-            <element signature="e#290#291#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Guest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -966,19 +951,6 @@
             <element signature="e#243#244#0" expanded="true" />
             <element signature="e#275#276#0" expanded="true" />
             <element signature="e#309#310#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Bedroom.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="29" lean-forward="false" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
-          <folding>
-            <element signature="e#297#298#0" expanded="true" />
-            <element signature="e#333#334#0" expanded="true" />
-            <element signature="e#367#368#0" expanded="true" />
-            <element signature="e#403#404#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1071,34 +1043,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ConferenceRoom.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="24" column="23" lean-forward="false" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
-          <folding>
-            <element signature="e#295#296#0" expanded="true" />
-            <element signature="e#331#332#0" expanded="true" />
-            <element signature="e#365#366#0" expanded="true" />
-            <element signature="e#401#402#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/BedroomTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="58" column="0" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
-          <caret line="57" column="0" lean-forward="false" selection-start-line="57" selection-start-column="2" selection-end-line="57" selection-end-column="8" />
-          <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="2" selection-end-line="56" selection-end-column="8" />
-          <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="2" selection-end-line="55" selection-end-column="8" />
-          <caret line="54" column="0" lean-forward="false" selection-start-line="54" selection-start-column="2" selection-end-line="54" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1523796689000" expanded="true" signature="1458:1465" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ConferenceRoomTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="370">
@@ -1133,6 +1077,58 @@
             <element signature="e#794#795#0" expanded="true" />
             <element signature="e#1132#1133#0" expanded="true" />
             <element signature="e#1180#1181#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ConferenceRoom.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="20" column="2" lean-forward="true" selection-start-line="20" selection-start-column="2" selection-end-line="25" selection-end-column="9" />
+          <folding>
+            <element signature="e#295#296#0" expanded="true" />
+            <element signature="e#331#332#0" expanded="true" />
+            <element signature="e#365#366#0" expanded="true" />
+            <element signature="e#401#402#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/RoomType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="19" lean-forward="false" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="32" />
+          <folding>
+            <element signature="e#178#179#0" expanded="true" />
+            <element signature="e#218#219#0" expanded="true" />
+            <element signature="e#254#255#0" expanded="true" />
+            <element signature="e#290#291#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Bedroom.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="13" lean-forward="true" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+          <folding>
+            <element signature="e#297#298#0" expanded="true" />
+            <element signature="e#333#334#0" expanded="true" />
+            <element signature="e#367#368#0" expanded="true" />
+            <element signature="e#403#404#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/BedroomTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="67" column="16" lean-forward="true" selection-start-line="67" selection-start-column="16" selection-end-line="67" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1586#1587#0" expanded="true" />
+            <element signature="e#1641#1642#0" expanded="true" />
+            <marker date="1523796929000" expanded="true" signature="1543:1550" ph="..." />
           </folding>
         </state>
       </provider>

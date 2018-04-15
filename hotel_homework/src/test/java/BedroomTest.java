@@ -2,6 +2,8 @@ import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
 
 public class BedroomTest {
 
@@ -52,11 +54,17 @@ public class BedroomTest {
          assertEquals(1, singleBedroom.getNumberOfOccupants());
     }
 
-//    @Test
-//    public void checkRoomCapacity(){
-//        assertTrue(singleBedroom.isRoomFull())
-//    }
-//
+    @Test
+    public void isRoomFullFalse(){
+        assertFalse(singleBedroom.isRoomFull());
+    }
+
+    @Test
+    public void isRoomFullTrue(){
+        singleBedroom.addOccupant(guest);
+        assertTrue(singleBedroom.isRoomFull());
+    }
+
 
 
 }
