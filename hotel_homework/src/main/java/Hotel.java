@@ -87,12 +87,6 @@ public class Hotel {
 
 
 
-//    public boolean canCheckBedroomCapacity(Bedroom room){
-//
-//    }
-
-
-
 //    I need to write my checkCapacity methods in each class. Above needs refactored.
 //
 // To check the class of the room I am looking to check capacity on.

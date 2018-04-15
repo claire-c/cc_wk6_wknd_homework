@@ -46,14 +46,14 @@ public class OtherRoomTest {
     }
 
     @Test
-    public void canCheckRoomCapacityEmpty(){
-        assertTrue(lounge.checkRoomCapacity());
+    public void isRoomFullFalse(){
+        assertFalse(lounge.isRoomFull());
     }
 
     @Test
-    public void canCheckRoomCapacityFull(){
+    public void isRoomFullTrue(){
         broomCupboard.addOccupant(guest);
-        assertFalse(broomCupboard.checkRoomCapacity());
+        assertTrue(broomCupboard.isRoomFull());
     }
 
 

@@ -11,12 +11,12 @@ public class OtherRoom extends Room {
         return this.capacity;
     }
 
-    public boolean checkRoomCapacity(){
+    public boolean isRoomFull(){
         if (getNumberOfOccupants() < getCapacity()){
-            return true;
+            return false;
         }
         else{
-            return false;
+            return true;
         }
     }
 

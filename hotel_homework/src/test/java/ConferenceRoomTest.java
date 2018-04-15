@@ -51,14 +51,14 @@ public class ConferenceRoomTest {
     }
 
     @Test
-    public void canCheckRoomCapacityNotFull(){
-        assertTrue(conferenceRoom.checkRoomCapacity());
+    public void isRoomFullFalse(){
+        assertFalse(conferenceRoom.isRoomFull());
     }
 
     @Test
-    public void canCheckRoomCapacityFull(){
+    public void isRoomFullTrue(){
         tinyConferenceRoom.addOccupant(guest);
-        assertFalse(tinyConferenceRoom.checkRoomCapacity());
+        assertTrue(tinyConferenceRoom.isRoomFull());
     }
 
 

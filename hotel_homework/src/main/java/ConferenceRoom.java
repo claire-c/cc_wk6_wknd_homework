@@ -17,12 +17,12 @@ public class ConferenceRoom extends Room {
         return this.roomRate;
     }
 
-    public boolean checkRoomCapacity(){
+    public boolean isRoomFull(){
         if (getNumberOfOccupants() < getCapacity()){
-            return true;
+            return false;
         }
         else{
-            return false;
+            return true;
         }
     }
 

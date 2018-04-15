@@ -52,6 +52,11 @@ public class BedroomTest {
          assertEquals(1, singleBedroom.getNumberOfOccupants());
     }
 
+//    @Test
+//    public void checkRoomCapacity(){
+//        assertTrue(singleBedroom.isRoomFull())
+//    }
+//
 
 
 }
