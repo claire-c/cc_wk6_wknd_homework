@@ -65,10 +65,13 @@ public class Hotel {
 
         Iterator<Guest> guestList = room.getOccupants().iterator();
 
-        while (guestList.hasNext()){
-            Guest occupant = guestList.next();
-            if (occupant.getName() == nameOfGuest){
-                guestList.remove();
+        if(room.getNumberOfOccupants() > 0 ) {
+
+            while (guestList.hasNext()) {
+                Guest occupant = guestList.next();
+                if (occupant.getName() == nameOfGuest) {
+                    guestList.remove();
+                }
             }
         }
 

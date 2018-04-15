@@ -154,6 +154,13 @@ public class HotelTest {
     }
 
     @Test
+    public void checkOutNamedGuestsWontBreakWhenRoomEmpty(){
+        fullHotel.checkOutNamedGuest("Jon", lounge);
+        assertEquals(0, lounge.getNumberOfOccupants());
+    }
+
+
+    @Test
     public void canGetGuestList(){
         fullHotel.checkInGuest(richGuest, doubleBedroom);
         fullHotel.checkInGuest(skintGuest, doubleBedroom);
