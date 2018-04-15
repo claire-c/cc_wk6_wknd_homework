@@ -167,6 +167,20 @@ public class HotelTest {
         assertEquals(2, fullHotel.getGuestList(doubleBedroom).size());
     }
 
+    @Test
+    public void canTakeRoomPaymentFromGuestBecauseTheyHaveMoney(){
+        fullHotel.takeRoomPayment(richGuest, singleBedroom);
+        assertEquals(125.0, fullHotel.getTill(), 0.1);
+        assertEquals(75.0, richGuest.getWallet(), 0.1);
+    }
+
+    @Test
+    public void cannotTakeRoomPaymentBecauseGuestHasNoMoney(){
+        fullHotel.takeRoomPayment(skintGuest,singleBedroom);
+        assertEquals(100.0, fullHotel.getTill(), 0.1);
+        assertEquals(0.0, skintGuest.getWallet(), 0.1);
+    }
+
 
 
 

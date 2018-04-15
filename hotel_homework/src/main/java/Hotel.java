@@ -89,6 +89,12 @@ public class Hotel {
         return room.getOccupants();
     }
 
+    public void takeRoomPayment(Guest guest, Room room){
+        double payment = guest.payForRoom(room);
+        till += payment;
+    }
+
+
 
 
 }
