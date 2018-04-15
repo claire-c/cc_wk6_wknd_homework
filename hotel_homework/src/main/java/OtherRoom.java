@@ -20,6 +20,10 @@ public class OtherRoom extends Room {
         }
     }
 
+    public double getRoomRate(){
+        return 0.0;
+    }
+
 
 
 

@@ -28,6 +28,8 @@ public abstract class Room {
 
     public abstract boolean isRoomFull();
 
+    public abstract double getRoomRate();
+
 
 
 

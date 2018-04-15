@@ -16,5 +16,11 @@ public class Guest {
         return this.wallet;
     }
 
+    public void payForRoom(Room room){
+        if(room.getRoomRate() < wallet){
+                wallet -= room.getRoomRate();
+            }
+    }
+
 
 }
