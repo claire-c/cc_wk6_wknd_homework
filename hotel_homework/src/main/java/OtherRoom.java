@@ -1,23 +1,17 @@
-public class ConferenceRoom extends Room {
+public class OtherRoom extends Room {
 
     private int capacity;
-    private double roomRate;
 
-    public ConferenceRoom(String name, int capacity, double roomRate){
+    public OtherRoom(String name, int capacity) {
         super(name);
         this.capacity = capacity;
-        this.roomRate = roomRate;
     }
 
     public int getCapacity(){
         return this.capacity;
     }
 
-    public double getRoomRate(){
-        return this.roomRate;
-    }
-
-    public boolean checkRoomCapacity(){
+    public boolean checkOtherRoomCapacity(){
         if (getNumberOfOccupants() < getCapacity()){
             return true;
         }
@@ -25,10 +19,6 @@ public class ConferenceRoom extends Room {
             return false;
         }
     }
-
-
-
-
 
 
 

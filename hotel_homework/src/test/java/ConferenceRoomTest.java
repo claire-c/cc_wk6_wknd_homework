@@ -2,16 +2,20 @@ import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
 
 public class ConferenceRoomTest {
 
     private ConferenceRoom conferenceRoom;
     private Guest guest;
+    private ConferenceRoom tinyConferenceRoom;
 
     @Before
     public void before(){
         conferenceRoom = new ConferenceRoom("Ruby", 100, 500.0);
         guest = new Guest("Claire", 50.0);
+        tinyConferenceRoom = new ConferenceRoom("tiny", 1, 5.0);
     }
 
     @Test
@@ -44,6 +48,17 @@ public class ConferenceRoomTest {
     public void canGetNumberOfOccupants(){
         conferenceRoom.addOccupant(guest);
         assertEquals(1, conferenceRoom.getNumberOfOccupants());
+    }
+
+    @Test
+    public void canCheckRoomCapacityNotFull(){
+        assertTrue(conferenceRoom.checkRoomCapacity());
+    }
+
+    @Test
+    public void canCheckRoomCapacityFull(){
+        tinyConferenceRoom.addOccupant(guest);
+        assertFalse(tinyConferenceRoom.checkRoomCapacity());
     }
 
 

@@ -3,14 +3,14 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class LoungeTest {
+public class OtherRoomTest {
 
-    private Lounge lounge;
+    private OtherRoom lounge;
     private Guest guest;
 
     @Before
     public void before(){
-        lounge = new Lounge("Chillax", 50);
+        lounge = new OtherRoom("Chillax", 50);
         guest = new Guest("Claire", 50.0);
     }
 
