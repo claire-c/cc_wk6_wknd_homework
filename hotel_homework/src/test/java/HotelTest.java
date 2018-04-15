@@ -207,10 +207,17 @@ public class HotelTest {
     }
 
     @Test
-    public void canGetGuestListBasedOnRoomName(){
+    public void canGetGuestNamesBasedOnRoomName(){
         fullHotel.checkInGuest(richGuest, doubleBedroom);
         fullHotel.checkInGuest(richGuest2, doubleBedroom);
-        assertEquals(2, fullHotel.getGuestsFromRoomName("2").size());
+        assertEquals(2, fullHotel.getGuestNamesFromRoomName("2").size());
+        assertEquals("Claire", fullHotel.getGuestNamesFromRoomName("2").get(0));
+        assertEquals("Simon", fullHotel.getGuestNamesFromRoomName("2").get(1));
+    }
+
+    @Test
+    public void guestNamesWontBreakIfRoomIsEmpty(){
+        assertEquals(0, fullHotel.getGuestNamesFromRoomName("2").size())    ;
     }
 
 

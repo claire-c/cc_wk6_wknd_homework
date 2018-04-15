@@ -106,17 +106,20 @@ public class Hotel {
         return vacantBedrooms;
     }
 
-    public ArrayList<Guest> getGuestsFromRoomName(String roomName){
+    public ArrayList<String> getGuestNamesFromRoomName(String roomName){
         ArrayList<Guest> guests = new ArrayList<>();
+        ArrayList<String> guestNames = new ArrayList<>();
         for(Bedroom room : bedrooms){
             if(room.getName() == roomName){
                 guests = room.getOccupants();
+                for (Guest guest : guests){
+                    guestNames.add(guest.getName());
+                }
             }
         }
-        return guests;
+        return guestNames;
 
     }
-
 
 
 
