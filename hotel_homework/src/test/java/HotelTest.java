@@ -199,6 +199,11 @@ public class HotelTest {
         assertEquals(0.0, skintGuest.getWallet(), 0.1);
     }
 
+    @Test
+    public void canSeeVacantBedrooms(){
+        assertEquals(2, fullHotel.vacantRooms().size());
+    }
+
 
 
 

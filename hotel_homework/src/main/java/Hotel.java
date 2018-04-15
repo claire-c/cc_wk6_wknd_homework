@@ -1,3 +1,4 @@
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Iterator;
 
@@ -94,6 +95,18 @@ public class Hotel {
         double payment = guest.payForRoom(room);
         till += payment;
     }
+
+    public ArrayList<Bedroom> vacantRooms(){
+        ArrayList<Bedroom> vacantBedrooms = new ArrayList<>();
+        for (Bedroom room : this.bedrooms){
+            if (room.getNumberOfOccupants() == 0){
+                vacantBedrooms.add(room);
+            }
+        }
+        return vacantBedrooms;
+    }
+
+
 
 
 }
