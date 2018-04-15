@@ -13,6 +13,7 @@ public class HotelTest {
     private Hotel fullHotel;
     private Guest skintGuest;
     private Guest richGuest;
+    private Guest richGuest2;
     private Bedroom singleBedroom;
     private Bedroom doubleBedroom;
     private ConferenceRoom conferenceRoom;
@@ -26,9 +27,10 @@ public class HotelTest {
         hotel = new Hotel("Happiness Hotel", 0.0);
         skintGuest = new Guest("Jon", 0.0);
         richGuest = new Guest("Claire", 100.0);
+        richGuest2 = new Guest("Simon", 200.0);
         singleBedroom = new Bedroom("1", RoomType.SINGLE, 25.0);
         doubleBedroom = new Bedroom("2", RoomType.DOUBLE, 50.0);
-        conferenceRoom = new ConferenceRoom("conference", 100, 500.0);
+        conferenceRoom = new ConferenceRoom("conference", 100, 5.0);
         lounge = new OtherRoom("lounge", 50);
         tinyConferenceRoom = new ConferenceRoom("tiny", 1, 5.0);
         tinyLounge = new OtherRoom("tiny lounge", 1);
@@ -102,36 +104,45 @@ public class HotelTest {
     public void canCheckInGuestToSingleBedroom(){
         fullHotel.checkInGuest(richGuest, singleBedroom);
         assertEquals(1, singleBedroom.getOccupants().size());
+        assertEquals(125.0, fullHotel.getTill(), 0.1);
+        assertEquals(75.0, richGuest.getWallet(), 0.1);
     }
 
     @Test
     public void canCheckInGuestToDoubleBedroom(){
         fullHotel.checkInGuest(richGuest, doubleBedroom);
         assertEquals(1, doubleBedroom.getOccupants().size());
+        assertEquals(150.0, fullHotel.getTill(), 0.1);
+        assertEquals(50.0, richGuest.getWallet(), 0.1);
     }
 
     @Test
     public void canCheckInGuestToConferenceRoom(){
-        fullHotel.checkInGuest(skintGuest, conferenceRoom);
+        fullHotel.checkInGuest(richGuest, conferenceRoom);
         assertEquals(1, conferenceRoom.getOccupants().size());
+        assertEquals(105.0, fullHotel.getTill(), 0.1);
+        assertEquals(95.0, richGuest.getWallet(), 0.1);
+
     }
 
     @Test
     public void canCheckInGuestToLounge(){
         fullHotel.checkInGuest(skintGuest, lounge);
         assertEquals(1, lounge.getOccupants().size());
+        assertEquals(100.0, fullHotel.getTill(), 0.1);
+        assertEquals(0.0, skintGuest.getWallet(), 0.1);
     }
 
     @Test
     public void cannotCheckInGuestRoomFull(){
-        fullHotel.checkInGuest(skintGuest, singleBedroom);
+        fullHotel.checkInGuest(richGuest2, singleBedroom);
         fullHotel.checkInGuest(richGuest,singleBedroom);
         assertEquals(1, singleBedroom.getNumberOfOccupants());
     }
 
     @Test
     public void canCheckOutAnyGuest(){
-        fullHotel.checkInGuest(skintGuest, singleBedroom);
+        fullHotel.checkInGuest(richGuest2, singleBedroom);
         fullHotel.checkOutAnyGuest(singleBedroom);
         fullHotel.checkInGuest(richGuest, conferenceRoom);
         fullHotel.checkOutAnyGuest(conferenceRoom);
@@ -163,7 +174,7 @@ public class HotelTest {
     @Test
     public void canGetGuestList(){
         fullHotel.checkInGuest(richGuest, doubleBedroom);
-        fullHotel.checkInGuest(skintGuest, doubleBedroom);
+        fullHotel.checkInGuest(richGuest2, doubleBedroom);
         assertEquals(2, fullHotel.getGuestList(doubleBedroom).size());
     }
 
@@ -177,6 +188,13 @@ public class HotelTest {
     @Test
     public void cannotTakeRoomPaymentBecauseGuestHasNoMoney(){
         fullHotel.takeRoomPayment(skintGuest,singleBedroom);
+        assertEquals(100.0, fullHotel.getTill(), 0.1);
+        assertEquals(0.0, skintGuest.getWallet(), 0.1);
+    }
+
+    @Test
+    public void cannotCheckInGuestBecauseTheyCannotPay(){
+        fullHotel.checkInGuest(skintGuest, singleBedroom);
         assertEquals(100.0, fullHotel.getTill(), 0.1);
         assertEquals(0.0, skintGuest.getWallet(), 0.1);
     }

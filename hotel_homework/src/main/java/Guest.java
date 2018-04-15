@@ -17,7 +17,7 @@ public class Guest {
     }
 
     public boolean canPay(Room room){
-        if(room.getRoomRate() < wallet){
+        if(room.getRoomRate() <= wallet){
             return true;
         }else{
             return false;
